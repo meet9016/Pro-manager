@@ -172,7 +172,6 @@ const LeaveManagement = () => {
             setError(null);
 
             const formData = new FormData();
-            formData.append('user_id', user.user_id);
             formData.append('status', status);
 
             const response = await api.post('/leave_list', formData);
@@ -282,7 +281,6 @@ const LeaveManagement = () => {
 
         try {
             const formData = new FormData();
-            formData.append('user_id', user.user_id);
             formData.append('status', '2');
             formData.append('leave_id', leaveId);
             formData.append('reject_reason', '');
@@ -322,7 +320,6 @@ const LeaveManagement = () => {
 
         try {
             const formData = new FormData();
-            formData.append('user_id', user.user_id);
             formData.append('status', '3');
             formData.append('leave_id', rejectionModal.leaveData.leave_id);
             formData.append('reject_reason', rejectionModal.reason);

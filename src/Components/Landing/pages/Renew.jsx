@@ -320,7 +320,6 @@ const Renew = () => {
         const formData = new FormData();
 
 
-        formData.append("user_id", user.user_id);
         formData.append("gst_number", enabled ? gstNumber : "");
         formData.append("total_employee", employees);
         formData.append("billing_cycle", billingCycle);
